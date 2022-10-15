@@ -1,0 +1,91 @@
+array1 = [1, 2, 3]
+array2 = [3, 4, 5]
+
+
+# O operador &, retorna (dá como resultado) um novo array contendo os elementos em comum nos dois arrays
+# (array1 e array2), sem duplicatas.
+
+array1 & array2
+# Saída: [3]
+
+
+# O operador +, retorna um novo array produzido pela concatenação (união) dos dois arrays (array1 e array2).
+
+array1 + array2
+# Saída: [1, 2, 3, 3, 4, 5]
+
+
+# O operador -, retorna uma cópia do array1 removendo os elementos que também constam no array2.
+
+array1 - array2
+# Saída: [1, 2]
+
+
+# O operador ==, irá retornar verdadeiro(true) caso o array1 e o array2 tenham a mesma quantidade de elementos
+# e se cada elemento do array1 for igual ao seu correspondente (mesma posição) no array2.
+# Caso contrario será retornado falso(false)
+
+array1 == array2
+# Saída: false
+
+
+# O método clear, remove todos os elementos do array1.
+
+array1.clear
+# Saída: []
+
+
+# O método delete, recebe um elemento como parâmetro e o remove do array.
+# O método irá retornar o próprio valor removido ou nil caso o elemento passado como parâmetro não seja encontrado no array.
+
+array1.delete(1)
+# Saída: 1
+
+
+# O método delete_at, recebe um índice (número inteiro) como parâmetro e remove o elemento armazenado naquela posição.
+# O método irá retornar o valor removido ou nil caso o índice passado como parâmetro esteja fora das dimensões do array.
+
+array2.delete_at(1)
+# Saída: 4
+
+
+# O método empty?, irá retornar verdadeiro(true) caso o array esteja vazio e falso(false) caso contrário.
+
+array1.empty?
+# Saída: false
+
+
+# O método include?, recebe um elemento como parâmetro
+# e retorna verdadeiro(true) caso esse elemento esteja presente dentro do array,
+# e falso(false) caso contrário.
+
+array1.include?(1)
+# Saída: true
+
+
+# O método size, retorna o número de elementos armazenados no array.
+
+array2.size
+# Saída: 3
+
+
+# O metodo first, retorna o primeiro elemento armazenado no array.
+
+array2.first ou array2[0]
+# Saída: 3
+
+
+# O metodo pop, deleta o ultimo item do array e retorna o item deletado.
+
+array2.pop
+# Saída: 5
+
+
+# O metodo shiftv deleta o primeiro item do array e retorna o item deletado.
+
+array2.shift
+# Saída: 3
+
+
+
+Referência: https://ifrnead.github.io/rubynapratica/contents/programacao_estruturada/arrays.html
