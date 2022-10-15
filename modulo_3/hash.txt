@@ -1,0 +1,41 @@
+1 - Há duas formas de criar uma hash (Dicionario do Ruby)
+
+capital = Hash.new
+#Recomendada
+capital = {acre: "Rio Branco", sao_paulo: "São Paulo"}
+
+2 - Para acessar um valor do dicionario basta:
+
+puts capital[:acre]
+# Saída: Rio Branco
+
+3 - Também é possivel adicionar mais uma chave na Hash, da seguinte forma:
+
+capital[:minas_gerais] = "Belo Horizonte"
+
+4 - Se você tentar acessar uma chave que não existe será retornado nulo(nil)
+
+puts capital[0]
+puts capital[:a]
+# Saída: nil
+# Saída: nil
+
+
+5 - Para deletar uma chave é só usar o metodo delete e passar a chave desejada como parametro
+
+capital.delete(:acre)
+puts capital
+# Saída: {:sao_paulo=>"São Paulo", :minas_gerais=>"Belo Horizonte"}
+
+6 - Você pode checar se o hash está vazio, o metodo empty?
+
+# OBS: Só é possivel deletar uma chave de cada vez com o metodo delete()
+capital.delete(:sao_paulo)
+capital.delete(:minas_gerais)
+
+puts capital
+puts capital.empty?
+
+# Saída: {}
+# Saída: true
+
